@@ -5,7 +5,7 @@ import EmailService from '../services/email.service.js';
         try {
             const { nome, email, mensagem } = req.body;
           
-            if (!nome || !email || !mensagem) {
+            if (!nome || !mensagem) {
               return res.status(400).json({
                 falha: 'Dados incompletos'
               });
